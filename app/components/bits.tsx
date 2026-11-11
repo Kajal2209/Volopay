@@ -57,7 +57,13 @@ export function TopBar({ children }: { children?: React.ReactNode }) {
     <div className="no-print border-b border-rule bg-desk/80">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Wordmark />
-        <div className="flex items-center gap-3 text-sm">{children}</div>
+        <div className="flex items-center gap-3 whitespace-nowrap text-sm sm:gap-4">
+          <Link className="text-sm font-medium text-carbon underline-offset-4 hover:underline" href="/connect">
+            <span className="sm:hidden">Connect</span>
+            <span className="hidden sm:inline">Connect Claude</span>
+          </Link>
+          {children}
+        </div>
       </div>
     </div>
   );

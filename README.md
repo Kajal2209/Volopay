@@ -12,6 +12,14 @@ QuoteLink has **no AI inside**: no model API keys and no AI SDKs. Claude does th
 2. In Claude, go to **Settings → Connectors → Add custom connector**. Name it *QuoteLink* and paste the link.
 3. In a chat, enable QuoteLink and ask for something like: *"Create a quote for Acme Corp: a 5-page marketing website, 2 revision rounds, 50% upfront, in INR, valid for 14 days."*
 
+**Claude Code:** run this once, then check it with `/mcp` inside `claude`:
+
+```bash
+claude mcp add --transport http --scope user quotelink "https://<app>/api/mcp?ws=<key>"
+```
+
+The full guide, with each visitor's own link filled in, is at `/connect` in the app.
+
 ### MCP tools
 
 | Tool | What it does |

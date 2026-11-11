@@ -25,11 +25,7 @@ export default async function Dashboard({ params }: { params: Promise<{ key: str
 
   return (
     <main>
-      <TopBar>
-        <Link className={btn.ghost} href="/">
-          Connect Claude
-        </Link>
-      </TopBar>
+      <TopBar />
       <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>

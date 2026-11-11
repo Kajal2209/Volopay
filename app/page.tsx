@@ -92,6 +92,9 @@ export default async function Home() {
                 </li>
               ))}
             </ol>
+            <Link className={`${btn.ghost} mt-6 inline-block`} href="/connect">
+              Full setup guide, including Claude Code
+            </Link>
           </div>
           <div>
             <h2 className="text-2xl font-semibold tracking-tight">Things to ask Claude</h2>
